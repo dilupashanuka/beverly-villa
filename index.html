@@ -27,7 +27,7 @@
       <a href="index.html" class="logo">
         <span>Beverly Villa</span>
       </a>
-      <div class="menu-toggle" id="mobile-menu">
+      <div class="hamburger">
         <span></span>
         <span></span>
         <span></span>
@@ -41,17 +41,6 @@
       </ul>
     </div>
   </nav>
-
-  <!-- MOBILE MENU OVERLAY -->
-  <div class="mobile-overlay" id="mobile-overlay">
-    <ul class="mobile-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="rooms.html">Rooms</a></li>
-      <li><a href="experiences.html">Experiences</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Book Now</a></li>
-    </ul>
-  </div>
 
   <!-- HERO -->
   <header class="hero">
@@ -100,59 +89,66 @@
         <h2 class="section-title">Villa Highlights</h2>
       </div>
       <div class="features-grid">
-        <div class="feature-card reveal" style="transition-delay: 0.1s">
-          <div class="feature-icon">🛌</div>
-          <h4>Cozy Rooms</h4>
-          <p>4-5 spacious bedrooms with attached bathrooms, accommodating up to 12 guests.</p>
+        <div class="feature-card reveal" style="transition-delay: 0.1s;">
+          <div class="feature-icon">🌅</div>
+          <h4>Mist Views</h4>
+          <p>Wake up to the ethereal beauty of the Sinharaja mist rolling over the mountains.</p>
         </div>
-        <div class="feature-card reveal" style="transition-delay: 0.2s">
-          <div class="feature-icon">🍳</div>
-          <h4>Full Kitchen</h4>
-          <p>A fully equipped kitchen for self-catering or BBQ nights under the stars.</p>
-        </div>
-        <div class="feature-card reveal" style="transition-delay: 0.3s">
-          <div class="feature-icon">🌳</div>
+        <div class="feature-card reveal" style="transition-delay: 0.2s;">
+          <div class="feature-icon">🍃</div>
           <h4>Tea Estate</h4>
-          <p>Wake up to the sight of lush green rolling hills and fresh mountain air.</p>
+          <p>Wander through acres of lush green tea bushes and experience estate life.</p>
+        </div>
+        <div class="feature-card reveal" style="transition-delay: 0.3s;">
+          <div class="feature-icon">🐦</div>
+          <h4>Bird Watching</h4>
+          <p>Home to numerous endemic species, perfect for nature enthusiasts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="about-text reveal-left">
+          <span class="section-label">Accommodation</span>
+          <h3>Comfort in the Wild</h3>
+          <p>Our rooms are designed to provide maximum comfort while keeping you connected to the nature outside.</p>
+          <a href="rooms.html" class="btn">View All Rooms</a>
+        </div>
+        <div class="about-img reveal-right">
+          <img src="assets/room.png" alt="Beverly Villa Room View">
         </div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="section" style="background: var(--forest); color: white;">
+  <section class="section" style="background: var(--forest); color: var(--white);">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label" style="color: var(--gold-light);">Testimonials</span>
-        <h2 class="section-title" style="color: white;">What Our Guests Say</h2>
+        <span class="section-label" style="color: var(--gold);">Testimonials</span>
+        <h2 class="section-title" style="color: var(--white);">What Guests Say</h2>
       </div>
       <div class="features-grid">
-        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
-          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"The most peaceful place I've ever stayed. Waking up to the mist over the tea estates was magical. The BBQ night was the highlight!"</p>
-          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Dilshan R.</h5>
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); color: var(--white);">
+          <p style="font-style: italic; margin-bottom: 1.5rem;">"An unforgettable escape. The view of Sinharaja from the balcony is absolutely magical."</p>
+          <div style="color: var(--gold);">★★★★★</div>
+          <h5 style="margin-top: 1rem;">- Chaminda R.</h5>
         </div>
-        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition-delay: 0.1s;">
-          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
-          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"Close to Sinharaja entrance. The staff is incredibly friendly and the villa is very clean and private. Highly recommended for groups."</p>
-          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Sarah J.</h5>
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); color: var(--white); transition-delay: 0.2s;">
+          <p style="font-style: italic; margin-bottom: 1.5rem;">"The perfect blend of luxury and nature. The food was amazing and the staff were very attentive."</p>
+          <div style="color: var(--gold);">★★★★★</div>
+          <h5 style="margin-top: 1rem;">- Sarah Mitchell</h5>
         </div>
-        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition-delay: 0.2s;">
-          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
-          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"A true rainforest escape. We loved the Patna sliding rock which is very close by. The villa design is beautiful and premium."</p>
-          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Akila W.</h5>
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); color: var(--white); transition-delay: 0.3s;">
+          <p style="font-style: italic; margin-bottom: 1.5rem;">"Highly recommended for anyone looking for peace and quiet. The tea estate walks are lovely."</p>
+          <div style="color: var(--gold);">★★★★★</div>
+          <h5 style="margin-top: 1rem;">- Nishantha G.</h5>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA SECTION -->
-  <section class="section" style="text-align: center; background: url('assets/hero.png'); background-attachment: fixed; background-size: cover; padding: 12rem 0;">
-    <div style="position: absolute; inset: 0; background: rgba(26,58,52,0.8);"></div>
-    <div class="container reveal" style="position: relative; z-index: 1;">
-      <h2 style="color: white; font-size: 3.5rem; margin-bottom: 2rem;">Ready for an Unforgettable Stay?</h2>
-      <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 700px; margin: 0 auto 3rem;">Join us at Beverly Villa and rediscover the beauty of nature in its purest form.</p>
-      <a href="contact.html" class="btn">Book Your Escape</a>
     </div>
   </section>
 
@@ -162,131 +158,33 @@
       <div class="footer-grid">
         <div class="footer-info">
           <div class="footer-logo">Beverly Villa</div>
-          <p style="opacity: 0.7; font-size: 0.9rem;">Deniyaya's premier rainforest retreat. Experience the tranquility of a tea estate bungalow.</p>
+          <p>Your premium gateway to the Sinharaja Rainforest. Experience luxury in the heart of nature.</p>
         </div>
         <div class="footer-links">
-          <h4>Explore</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="rooms.html">Rooms</a></li>
             <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </div>
         <div class="footer-links">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:0742143181">074 214 3181</a></li>
-            <li><a href="tel:0775933695">077 593 3695</a></li>
-            <li>Beverly Road, Deniyaya</li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Social</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li>📍 Deniyaya, Sri Lanka</li>
+            <li>📞 +94 77 123 4567</li>
+            <li>✉️ info@beverlyvilla.com</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Deniyaya Beverly Villa. Designed with ❤️ for Nature Lovers.
+        <p>&copy; 2026 Deniyaya Beverly Villa. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
-  <div class="floating-btns">
-    <a href="https://wa.me/94775933695" class="float-btn float-whatsapp" title="Chat on WhatsApp">💬</a>
-    <div class="float-btn float-top" id="scrollTop" title="Back to Top">↑</div>
-  </div>
-
-  <script>
-    // PRELOADER
-    window.addEventListener('load', () => {
-      const preloader = document.getElementById('preloader');
-      setTimeout(() => {
-        preloader.classList.add('fade-out');
-        document.body.classList.remove('no-scroll');
-      }, 1500);
-    });
-
-    // CUSTOM CURSOR
-    const cursor = document.getElementById('cursor');
-    const cursorBlur = document.getElementById('cursor-blur');
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-      cursorBlur.style.left = e.clientX + 'px';
-      cursorBlur.style.top = e.clientY + 'px';
-    });
-
-    // TYPING EFFECT
-    const text = "Your Private Rainforest Sanctuary";
-    const heroTitle = document.getElementById('hero-title');
-    let i = 0;
-    function typeEffect() {
-      if (i < text.length) {
-        heroTitle.innerHTML = text.substring(0, i + 1) + '<span class="cursor-type">|</span>';
-        i++;
-        setTimeout(typeEffect, 50);
-      } else {
-        heroTitle.innerHTML = text;
-      }
-    }
-    setTimeout(typeEffect, 2000);
-
-    // MOBILE MENU TOGGLE
-    const menuToggle = document.getElementById('mobile-menu');
-    const overlay = document.getElementById('mobile-overlay');
-    
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      overlay.classList.toggle('active');
-      document.body.classList.toggle('no-scroll');
-    });
-
-    // NAVBAR & SCROLL EFFECTS
-    window.addEventListener('scroll', () => {
-      const nav = document.querySelector('.navbar');
-      const topBtn = document.getElementById('scrollTop');
-      
-      if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-
-      if (window.scrollY > 500) {
-        topBtn.classList.add('visible');
-      } else {
-        topBtn.classList.remove('visible');
-      }
-
-      // Parallax Hero
-      const heroBg = document.querySelector('.hero-bg');
-      heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.3}px)`;
-    });
-
-    // SCROLL TO TOP
-    document.getElementById('scrollTop').addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // REVEAL ON SCROLL
-    const observerOptions = {
-      threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
+  <!-- FLOATING BUTTONS -->
+  <script src="script.js"></script>
 </body>
 </html>
