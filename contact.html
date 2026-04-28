@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations — Deniyaya Beverly Villa</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      margin-top: 4rem;
+    }
+    .contact-info-card {
+      background: var(--forest);
+      color: var(--white);
+      padding: 4rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+    .info-item {
+      margin-bottom: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .info-icon {
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    .info-text h4 { margin-bottom: 0.5rem; color: var(--gold); }
+    .info-text p { opacity: 0.8; }
+    
+    .reservation-form {
+      background: var(--white);
+      padding: 4rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .form-control {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 10px rgba(197,160,89,0.1);
+    }
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: #25D366;
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      font-weight: 700;
+    }
+    @media (max-width: 992px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span>Beverly Villa</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="inner-hero" style="background: linear-gradient(rgba(26,58,52,0.6), rgba(26,58,52,0.8)), url('assets/hero.png'); height: 40vh; display: flex; align-items: center; justify-content: center; color: white;">
+    <div class="container" style="text-align: center;">
+      <h1>Get In Touch</h1>
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; margin-top: 1rem;">Reserve Your Rainforest Escape</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <div class="contact-info-card">
+          <h2 style="margin-bottom: 2rem; color: var(--gold);">Location Info</h2>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>Beverly Road, Kiriweldola, Kotapola, Deniyaya, Sri Lanka.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <h4>Phone Numbers</h4>
+              <p>074 214 3181</p>
+              <p>+94 77 593 3695</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>info@beverlyvilladeniyaya.com</p>
+            </div>
+          </div>
+          <a href="https://wa.me/94775933695" class="whatsapp-btn">
+             Chat via WhatsApp
+          </a>
+        </div>
+
+        <div class="reservation-form">
+          <h2 style="margin-bottom: 2rem; color: var(--forest);">Online Reservation</h2>
+          <form onsubmit="event.preventDefault(); alert('Booking request sent! We will contact you soon.');">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="e.g. 077 123 4567" required>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label>Arrival Date</label>
+                <input type="date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label>Guests</label>
+                <select class="form-control">
+                  <option>1-2 Persons</option>
+                  <option>3-5 Persons</option>
+                  <option>6-10 Persons</option>
+                  <option>10+ Persons (Full Villa)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Special Requests</label>
+              <textarea class="form-control" rows="4" placeholder="Any specific requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Submit Request</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 Deniyaya Beverly Villa.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

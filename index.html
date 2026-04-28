@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deniyaya Beverly Villa — Rainforest Retreat & Holiday Bungalow</title>
+  <meta name="description" content="Experience the ultimate rainforest retreat at Deniyaya Beverly Villa. Nestled in a lush tea estate with misty mountain views and Sinharaja forest access."/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">Beverly Villa</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span>Beverly Villa</span>
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <ul class="mobile-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="reveal">
+        <span class="section-label" style="color: var(--white); opacity: 0.8; letter-spacing: 0.8em; margin-bottom: 2rem;">SINHARAJA MIST</span>
+        <h1 id="hero-title" style="font-size: clamp(3rem, 8vw, 6rem); line-height: 1.1; margin-bottom: 2rem;">Your Private Rainforest Sanctuary</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9; max-width: 600px; line-height: 1.6;">Experience the ultimate blend of luxury and nature in a private tea estate bungalow overlooking the UNESCO Sinharaja Rainforest.</p>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="rooms.html" class="btn">Explore Rooms</a>
+          <a href="contact.html" class="btn" style="background: transparent; border: 2px solid var(--white); backdrop-filter: blur(5px);">Book Villa</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal-left">
+          <img src="assets/tea.png" alt="Beverly Villa Tea Estate">
+        </div>
+        <div class="about-text reveal-right">
+          <span class="section-label">Our Story</span>
+          <h3>A Sanctuary Amidst the Mist</h3>
+          <p>Located in the heart of Deniyaya, Beverly Villa is more than just a stay—it's an immersion into the natural beauty of Sri Lanka's southern highlands.</p>
+          <p>Surrounded by a private tea estate and overlooking the emerald canopy of the Sinharaja Rainforest, our bungalow offers the perfect blend of colonial charm and modern comfort.</p>
+          <ul style="margin-bottom: 2rem;">
+            <li style="margin-bottom: 0.5rem;">🌿 100% Privacy & Seclusion</li>
+            <li style="margin-bottom: 0.5rem;">🏔️ Breathtaking Mountain Views</li>
+            <li style="margin-bottom: 0.5rem;">🚶 Direct Access to Nature Trails</li>
+          </ul>
+          <a href="contact.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Villa Highlights</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal" style="transition-delay: 0.1s">
+          <div class="feature-icon">🛌</div>
+          <h4>Cozy Rooms</h4>
+          <p>4-5 spacious bedrooms with attached bathrooms, accommodating up to 12 guests.</p>
+        </div>
+        <div class="feature-card reveal" style="transition-delay: 0.2s">
+          <div class="feature-icon">🍳</div>
+          <h4>Full Kitchen</h4>
+          <p>A fully equipped kitchen for self-catering or BBQ nights under the stars.</p>
+        </div>
+        <div class="feature-card reveal" style="transition-delay: 0.3s">
+          <div class="feature-icon">🌳</div>
+          <h4>Tea Estate</h4>
+          <p>Wake up to the sight of lush green rolling hills and fresh mountain air.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="background: var(--forest); color: white;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color: var(--gold-light);">Testimonials</span>
+        <h2 class="section-title" style="color: white;">What Our Guests Say</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
+          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"The most peaceful place I've ever stayed. Waking up to the mist over the tea estates was magical. The BBQ night was the highlight!"</p>
+          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Dilshan R.</h5>
+        </div>
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition-delay: 0.1s;">
+          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
+          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"Close to Sinharaja entrance. The staff is incredibly friendly and the villa is very clean and private. Highly recommended for groups."</p>
+          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Sarah J.</h5>
+        </div>
+        <div class="feature-card reveal" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition-delay: 0.2s;">
+          <div style="color: var(--gold); margin-bottom: 1rem;">★★★★★</div>
+          <p style="color: rgba(255,255,255,0.8); font-style: italic;">"A true rainforest escape. We loved the Patna sliding rock which is very close by. The villa design is beautiful and premium."</p>
+          <h5 style="margin-top: 1.5rem; color: var(--gold);">— Akila W.</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section" style="text-align: center; background: url('assets/hero.png'); background-attachment: fixed; background-size: cover; padding: 12rem 0;">
+    <div style="position: absolute; inset: 0; background: rgba(26,58,52,0.8);"></div>
+    <div class="container reveal" style="position: relative; z-index: 1;">
+      <h2 style="color: white; font-size: 3.5rem; margin-bottom: 2rem;">Ready for an Unforgettable Stay?</h2>
+      <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 700px; margin: 0 auto 3rem;">Join us at Beverly Villa and rediscover the beauty of nature in its purest form.</p>
+      <a href="contact.html" class="btn">Book Your Escape</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">Beverly Villa</div>
+          <p style="opacity: 0.7; font-size: 0.9rem;">Deniyaya's premier rainforest retreat. Experience the tranquility of a tea estate bungalow.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0742143181">074 214 3181</a></li>
+            <li><a href="tel:0775933695">077 593 3695</a></li>
+            <li>Beverly Road, Deniyaya</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Deniyaya Beverly Villa. Designed with ❤️ for Nature Lovers.
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-btns">
+    <a href="https://wa.me/94775933695" class="float-btn float-whatsapp" title="Chat on WhatsApp">💬</a>
+    <div class="float-btn float-top" id="scrollTop" title="Back to Top">↑</div>
+  </div>
+
+  <script>
+    // PRELOADER
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.classList.add('fade-out');
+        document.body.classList.remove('no-scroll');
+      }, 1500);
+    });
+
+    // CUSTOM CURSOR
+    const cursor = document.getElementById('cursor');
+    const cursorBlur = document.getElementById('cursor-blur');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      cursorBlur.style.left = e.clientX + 'px';
+      cursorBlur.style.top = e.clientY + 'px';
+    });
+
+    // TYPING EFFECT
+    const text = "Your Private Rainforest Sanctuary";
+    const heroTitle = document.getElementById('hero-title');
+    let i = 0;
+    function typeEffect() {
+      if (i < text.length) {
+        heroTitle.innerHTML = text.substring(0, i + 1) + '<span class="cursor-type">|</span>';
+        i++;
+        setTimeout(typeEffect, 50);
+      } else {
+        heroTitle.innerHTML = text;
+      }
+    }
+    setTimeout(typeEffect, 2000);
+
+    // MOBILE MENU TOGGLE
+    const menuToggle = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+    
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // NAVBAR & SCROLL EFFECTS
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      const topBtn = document.getElementById('scrollTop');
+      
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+
+      if (window.scrollY > 500) {
+        topBtn.classList.add('visible');
+      } else {
+        topBtn.classList.remove('visible');
+      }
+
+      // Parallax Hero
+      const heroBg = document.querySelector('.hero-bg');
+      heroBg.style.transform = `scale(1.1) translateY(${window.scrollY * 0.3}px)`;
+    });
+
+    // SCROLL TO TOP
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // REVEAL ON SCROLL
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

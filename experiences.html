@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences & Nearby Attractions — Deniyaya Beverly Villa</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .exp-hero {
+      height: 40vh;
+      background: linear-gradient(rgba(26,58,52,0.6), rgba(26,58,52,0.8)), url('assets/nature.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-align: center;
+    }
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    .exp-card {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .exp-card:hover { transform: translateY(-10px); }
+    .exp-img { height: 300px; overflow: hidden; }
+    .exp-img img { width: 100%; height: 100%; object-fit: cover; }
+    .exp-info { padding: 2.5rem; }
+    .exp-info h3 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--forest); }
+    .exp-info p { color: var(--text-muted); font-size: 0.95rem; }
+    .map-container {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 5rem;
+      box-shadow: var(--shadow);
+    }
+    @media (max-width: 768px) {
+      .exp-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span>Beverly Villa</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="experiences.html" class="active">Experiences</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="exp-hero">
+    <div class="container">
+      <h1>Nature & Beyond</h1>
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; margin-top: 1rem;">Explore Deniyaya's Wonders</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Nearby</span>
+        <h2 class="section-title">Things To Do</h2>
+      </div>
+
+      <div class="exp-grid">
+        <!-- Sinharaja -->
+        <div class="exp-card reveal" style="transition-delay: 0.1s">
+          <div class="exp-img"><img src="assets/nature.png" alt="Sinharaja Forest"></div>
+          <div class="exp-info">
+            <h3>Sinharaja Rainforest</h3>
+            <p>Just 5.8 km from the villa, Sinharaja is a UNESCO World Heritage site and a biodiversity hotspot. Perfect for bird watching and nature treks.</p>
+          </div>
+        </div>
+
+        <!-- Patna -->
+        <div class="exp-card reveal" style="transition-delay: 0.2s">
+          <div class="exp-img"><img src="assets/tea.png" alt="Patna Sliding Rock"></div>
+          <div class="exp-info">
+            <h3>Patna Sliding Rock</h3>
+            <p>A natural water slide created by nature over thousands of years. A favorite spot for both locals and travelers for a refreshing dip.</p>
+          </div>
+        </div>
+
+        <!-- Waterfalls -->
+        <div class="exp-card reveal" style="transition-delay: 0.3s">
+          <div class="exp-img"><img src="assets/nature.png" alt="Waterfalls" style="filter: hue-rotate(45deg);"></div>
+          <div class="exp-info">
+            <h3>Magical Waterfalls</h3>
+            <p>Explore Sathmala Ella, Kekuna Ella, and many other hidden waterfalls in the lush Deniyaya jungle, all within easy reach.</p>
+          </div>
+        </div>
+
+        <!-- Tea Estate -->
+        <div class="exp-card reveal" style="transition-delay: 0.4s">
+          <div class="exp-img"><img src="assets/tea.png" alt="Tea Estate Walks" style="filter: brightness(0.8);"></div>
+          <div class="exp-info">
+            <h3>Tea Estate Walks</h3>
+            <p>Experience the life of a tea plantation. Walk through our own green rolling hills and learn about the journey of Ceylon tea.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header reveal" style="margin-top: 8rem; margin-bottom: 2rem;">
+        <span class="section-label">Location</span>
+        <h2 class="section-title">Find Us</h2>
+      </div>
+      <div class="map-container reveal">
+        <!-- Google Maps Embed for Beverly Road, Deniyaya -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.124639933758!2d80.551061!3d6.121516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e3d64c126639%3A0x6a2c2c07c4c3482!2sDeniyaya!5e0!3m2!1sen!2slk!4v1714285000000!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <div class="footer-logo">Beverly Villa</div>
+          <p style="opacity: 0.7; font-size: 0.9rem;">Deniyaya's premier rainforest retreat.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0742143181">074 214 3181</a></li>
+            <li><a href="tel:0775933695">077 593 3695</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Deniyaya Beverly Villa.
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-btns">
+    <a href="https://wa.me/94775933695" class="float-btn float-whatsapp" title="Chat on WhatsApp">💬</a>
+    <div class="float-btn float-top" id="scrollTop" title="Back to Top">↑</div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      const topBtn = document.getElementById('scrollTop');
+      if (window.scrollY > 50) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+      if (window.scrollY > 500) topBtn.classList.add('visible');
+      else topBtn.classList.remove('visible');
+    });
+
+    document.getElementById('scrollTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
